@@ -134,3 +134,10 @@ h3 {
   background-color: rgb(4, 32, 4);
   
 }
+.editar{
+  border-radius: 5%;
+  width: 34%;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
