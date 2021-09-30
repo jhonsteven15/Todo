@@ -5,11 +5,11 @@ const Todo = ({ todo, index, deleteTodo, modifyTodo, toggleComplete, handleChang
 
   return (
     <>
-       {
+       
       <div className='list'>
        
 
-          <input type="checkbox" onChange={()=>toggleComplete(index)}checked={index}/>
+          <input className = 'check' type="checkbox" onChange={()=>toggleComplete(index)}checked={index}/>
       
           <h3>{todo}</h3>
 
@@ -20,9 +20,7 @@ const Todo = ({ todo, index, deleteTodo, modifyTodo, toggleComplete, handleChang
           </div>
 
 
-        }
-
-        <form className="formulario" >Edit Todo
+        <form className="formulario" >
         <input type="text" name= 'todo' onChange={handleChange}/>
         <button className='btn-edit' onClick={() => modifyTodo    (index)}>
           Editar
