@@ -17,18 +17,17 @@ const Todo = ({ todo, index, deleteTodo, modifyTodo, toggleComplete, handleChang
           <button className='btn-delete' onClick={() => deleteTodo(index)}>
            x
           </button>
-          </div>
+          
 
 
-        <form className="formulario" >
-        <input type="text" name= 'todo' onChange={handleChange}/>
+       
+        <input type="text" className= 'editar' name= 'todo' onChange={handleChange}/>
         <button className='btn-edit' onClick={() => modifyTodo    (index)}>
           Editar
         </button>
 
-
-        </form>
-
+         
+        </div>
         
         
 
